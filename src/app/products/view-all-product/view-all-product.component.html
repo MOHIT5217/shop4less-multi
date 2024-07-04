@@ -1,0 +1,43 @@
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div >
+            <h1 class="fw-light">Searched All Products</h1>
+        </div>
+    </div>
+</section>
+<div class="album py-5 bg-light">
+    <div class="container">
+        <form #searchInput="ngForm" (submit)="getSearchData(searchInput.value)">
+            <input class="form-control" placeholder="Enter id" type="text" ngModel name="searchInput" >
+            <button class="btn btn-success">Search</button>
+        </form>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" *ngIf="productList">
+            <div class="col cardProd" *ngFor="let item of productList">
+                <div class="card shadow-sm">
+                    <img [src]="item.product_img" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text" class="productName">{{item.name}}</p>
+                        <p class="card-text" class="prodDes">{{item.description}} </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" [routerLink]="['/products/view', item.id]" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" [routerLink]="['/products/update', item.id]" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                <button type="button" [routerLink]="['/products/delete', item.id]" class="btn btn-sm btn-outline-secondary">Delete</button>
+                            </div>
+                            <small class="text-muted"><strong>{{item.currency}}{{ " " + "-" + " "}}{{item.price}}</strong></small>
+                        </div>
+                        <span [ngClass]="item.availability ? 'instock' : 'outofstock' ">{{item.availability ? "Instock" : "Out Of Stock"}}</span>
+                        <ng-container *ngIf="isArray(item.tags)">
+                            <div class="d-flex itemTagContainer">
+                                <span class="itemTags" *ngFor="let item of item.tags">
+                                    {{item}}
+                                </span>
+                            </div>
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<h1>retry works!</h1>
+
+<button class="btn btn-primary" (click)="fatchData()" type="button">
+    <span *ngIf="isStatus" class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+    <span role="status">{{isStatus?"Fatching...": 'Data Fatch'}}</span>
+</button>
+<div>
+    <strong>Status :
+        <span
+            [ngClass]="fatching === 'Data fatched'? 'text-success' : fatching === 'Data fatched error' ? 'text-danger' : ''">
+            {{fatching}}
+        </span> </strong>
+</div>
+<table class="table table-dark" *ngIf="data">
+    <thead>
+        <tr>
+            <th> User Id </th>
+            <th> Title </th>
+            <th> Completed </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of data">
+            <td>{{item.userId}}</td>
+            <td>{{item.title}}</td>
+            <td>{{item.completed}}</td>
+        </tr>
+    </tbody>
+</table>

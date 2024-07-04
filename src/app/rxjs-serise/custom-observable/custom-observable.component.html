@@ -1,0 +1,42 @@
+<p>custom-observable works!</p>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Custom-observable
+            </div>
+            <div class="card-body">
+                <ul class="techlist" [ngClass]="this.techStatus ==='error'? 'error': this.techStatus ==='complete'? 'complete': '' " id="elContainer">
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="card">
+            <div class="card-header">
+                Custom-observable
+            </div>
+            <div class="card-body">
+                <ul class="techlist" [ngClass]="this.techStatus1 ==='error'? 'error': this.techStatus1 ==='complete'? 'complete': '' " id="elContainer1">
+    
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6 mt-3">
+        <div class="card">
+            <div class="card-header">
+                ["Angular","Css","Javascript","HTML"]
+            </div>
+            <div class="card-body">
+                <div [ngClass]="techStatus2 === 'error'? 'text-danger': techStatus2==='complete'? 'text-success': ''">
+                    {{techNAme}}</div>
+                <span class="badge" [ngClass]="techStatus2 === 'error'? 'bg-danger': techStatus2==='complete'? 'bg-success': 'bg-secondary'">
+                    {{techStatus2 === 'error'? 'Error': techStatus2==='complete'? 'Success': 'Processing'}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

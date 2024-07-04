@@ -1,0 +1,80 @@
+<p>child works!</p>
+<h1>{{data}}</h1>
+
+<input type="text" #input>
+<button (click)="onclick(input.value)">send</button>
+
+
+<div class="row justify-content-center mb-5">
+    <div class="col-md-7">
+        <h1>Simple Form </h1>
+        <form class="form" #form="ngForm" (submit)="onSubmit(form.value)">
+            <label class="form-label" for="">name</label><input class="form-control" type="text" ngModel name="name"
+                id=""> <br>
+            <label class="form-label" for="">age</label> <input class="form-control" type="text" ngModel name="age"
+                id=""> <br>
+            <label class="form-label" for="">title</label><input class="form-control" type="text" ngModel name="title"
+                id=""><br>
+            <button class="btn btn-success">submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-7">
+        <h1>Reactive Form</h1>
+
+        <form [formGroup]="ReactiveForm" (submit)="onSubmitReactive()">
+            <label class="form-label" for="">name</label><input class="form-control" type="text" formControlName="name"
+                name="name" id=""> <br>
+            <label class="form-label" for="">age</label> <input class="form-control" type="number" formArrayName="age"
+                name="age" id=""> <br>
+            <label class="form-label" for="">title</label><input class="form-control" type="text"
+                formControlName="title" name="title" id=""><br>
+
+            <ng-container formArrayName="skills">
+                <label class="form-label" for="">skills</label>
+                <ng-container *ngFor="let controls of getSkillsControls(); let i = index">
+                    <div class="d-flex">
+                        <input class="form-control" [formControlName]="i" type="text" [name]="'skills' + i"
+                            id=""><button *ngIf="i > 0" class="btn btn-danger" (click)="removeSkill(i)">X</button>
+                    </div>
+                </ng-container>
+            </ng-container>
+            <button class="btn btn-light" (click)="addSkills()">
+                Add Skill
+            </button>
+
+            <div class="user mb-3">
+                <ng-container formArrayName="users">
+                    <label for="">Users</label>
+                    <ng-container *ngFor="let user of getUserControls(); let i = index" [formGroupName]="i">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label class="form-label" for="">Name</label>
+                                <input class="form-control" type="text" formControlName="name">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="">Age</label>
+                                <input class="form-control" type="text" formControlName="age" (blur)="assignDept(i)">
+                            </div>
+                            <div class="col-md-4">
+                                <label class="form-label" for="">Dept</label>
+                                <input class="form-control" type="text" formControlName="dept">
+                            </div>
+                            <div>
+                                <button *ngIf="i > 0" (click)="removeUser(i)" class="btn btn-danger">X</button>
+                            </div>
+                        </div>
+                    </ng-container>
+                </ng-container>
+                <button (click)="addUser()" class="btn btn-light">
+                    Add user
+                </button>
+            </div>
+
+            <button class="btn btn-success">submit</button>
+            <button class="btn btn-warning" (click)="resetFrom()">Reset Form</button>
+        </form>
+    </div>
+</div>

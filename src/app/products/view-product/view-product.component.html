@@ -1,0 +1,32 @@
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Product Detail Page</h1>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col cardProd">
+                <div class="card shadow-sm" *ngIf="productDetail">
+                    <img [src]="productDetail.product_img" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text">{{productDetail.name}}</p>
+                        <p class="card-text">{{productDetail.description}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" [routerLink]="['/products/delete', productDetail.id]" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                <button type="button" [routerLink]="['/products/update', productDetail.id]" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">Price - {{productDetail.price}}</small>
+                        </div>
+                        <span [ngClass]="productDetail.availability ? 'instock' : 'outofstock' ">{{productDetail.availability ? "Instock" : "Out Of Stock"}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

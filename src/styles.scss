@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.techlist{
+    list-style: none;
+    padding-left: 0px;
+    li{
+        border: 2px solid #f2f2f2;
+        padding: 10px 20px;
+        background: #f2f2f2;
+        color: #000000;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+}
+.techlist.error{
+    li{
+        border: 2px solid red;
+        background: rgb(248, 219, 219);
+        color: red;
+    }
+}
+.techlist.complete{
+    li{
+        border: 2px solid green;
+        background: rgb(223, 244, 223);
+        color: green;
+    }
+}
+
+#elContainer{
+    .item{
+        width: 500px;
+        border: 1px solid grey;
+        padding: 10px;
+        background-color: aliceblue;
+        border-radius: 8px;
+
+        .item-header{
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-body{
+            font-size: 14px;
+        }
+    }
+}

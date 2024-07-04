@@ -1,0 +1,33 @@
+<section class="text-center container">
+    <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Searched Categoy {{searched}} </h1>
+        </div>
+    </div>
+</section>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col cardProd" *ngFor="let item of productList">
+                <div class="card shadow-sm">
+                    <img [src]="item.product_img" alt="">
+
+                    <div class="card-body">
+                        <p class="card-text">{{item.name}}</p>
+                        <p class="card-text">{{item.description}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" [routerLink]="['/products/view', item.id]" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" [routerLink]="['/products/update', item.id]" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                            <small class="text-muted">Price - {{item.price}}</small>
+                        </div>
+                        <span [ngClass]="item.availability ? 'instock' : 'outofstock' ">{{item.availability ? "Instock" : "Out Of Stock"}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

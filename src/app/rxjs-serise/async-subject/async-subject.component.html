@@ -1,0 +1,22 @@
+<p>async-subject works!</p>
+<div class="row justify-content-center mb-5">
+    <div class="col-6 d-flex">
+        <input #inputData class="form-control" type="text"><button (click)="onSubmit(inputData)" class="btn btn-success">Submit</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">User 1</div>
+            <div class="card-body">Data - {{asyncVideoEmit}} </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">Sub Button</div>
+            <div class="card-body">
+                <button (click)="onComplete()" class="btn btn-info">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>

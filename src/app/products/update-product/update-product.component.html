@@ -1,0 +1,80 @@
+<h1 class="text-center my-5" *ngIf="prodData">Update-product - {{ prodData.name}}</h1>
+
+<form class="form p-5" (ngSubmit)="onSubmit(formUpdate.value);formUpdate.reset()" #formUpdate="ngForm" *ngIf="prodData">
+    <div class="mb-3">
+        <label class="form-label" for="name">Product Name</label>
+        <input class="form-control" type="text" [(ngModel)]="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="product_id">Product Id</label>
+        <input class="form-control" type="text" [(ngModel)]="product_id" name="product_id" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="category">Product Category</label>
+        <input class="form-control" type="text" [(ngModel)]="category" name="category" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="price">Product price</label>
+        <input class="form-control" type="number" [(ngModel)]="price" name="price" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="description">Product description</label>
+        <input class="form-control" type="text" [(ngModel)]="description" name="description" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="product_img">Product Image</label>
+        <input class="form-control" type="text" [(ngModel)]="product_img" name="product_img" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="manufacturer">Product manufacturer</label>
+        <input class="form-control" type="text" [(ngModel)]="manufacturer" name="manufacturer" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inventory">Product inventory</label>
+        <input class="form-control" type="number" [(ngModel)]="inventory" name="inventory" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="tags">Product tags</label>
+        <input class="form-control" type="text" [(ngModel)]="tags" name="tags" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="availability">Product availability</label>
+        <!-- <select class="form-select" name="availability" [(ngModel)] = " availability" required>
+            <option selected value=true >true</option>
+            <option value=false >false</option>
+        </select> -->
+        <input type="checkbox" [(ngModel)]="availability" name="availability">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="currency">Product currency</label>
+        <select class="form-select" name="currency" [(ngModel)]="currency" required>
+            <option selected value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+        </select>
+    </div>
+
+    <button type="button" [disabled]="!formUpdate.form.valid" class="btn btn-success" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">Submit</button>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure?</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    It will update yout existing data of this product.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

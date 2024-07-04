@@ -1,0 +1,46 @@
+.cardProd{
+    position: relative;
+    .instock{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        background-color: forestgreen;
+        color: #ffffff;
+        border-radius: 3px;
+        padding: 3px;
+        font-size: 12px;
+    }
+    .outofstock{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        background-color: red;
+        color: #ffffff;
+        border-radius: 3px;
+        padding: 3px;
+        font-size: 12px;
+    }
+    .productName{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .prodDes{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.itemTagContainer{
+    position: absolute;
+    top: 66%;
+    left: 3%;
+    .itemTags{
+        background-image: linear-gradient( to left bottom, green, rgb(75, 29, 29), green) ;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 3px;
+        border-radius: 3px;
+        margin-right: 5px;
+    }
+}

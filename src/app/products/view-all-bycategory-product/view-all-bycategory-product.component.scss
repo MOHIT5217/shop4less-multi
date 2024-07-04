@@ -1,0 +1,23 @@
+.cardProd{
+    position: relative;
+    .instock{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        background-color: forestgreen;
+        color: #ffffff;
+        border-radius: 3px;
+        padding: 3px;
+        font-size: 12px;
+    }
+    .outofstock{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        background-color: red;
+        color: #ffffff;
+        border-radius: 3px;
+        padding: 3px;
+        font-size: 12px;
+    }
+}

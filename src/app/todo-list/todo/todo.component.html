@@ -1,0 +1,39 @@
+
+<div class="mb-3 bg-light p-4">
+    <form #todoForm="ngForm" (ngSubmit)="create(todoForm.value)" *ngIf="!isEdit">
+        <div class="d-flex">
+            <input class="form-control" [placeholder]="createPlaceholder" type="text" name="note" [(ngModel)]="note" />
+            <button class="btn btn-success">
+                Create
+            </button>
+        </div>
+    </form>
+    <ng-container *ngIf="isEdit">
+        <form #todoFormEdit="ngForm">
+            <div class="d-flex">
+                <input class="form-control" type="text" name="note" [value]="itemForedit"
+                    [(ngModel)]="itemForedit" />
+                <button (click)="editItemNow()" class="btn btn-success">
+                    Save
+                </button>
+                <button (click)="cancleEdit()" class="btn btn-danger">
+                    X
+                </button>
+            </div>
+        </form>
+    </ng-container>
+    <ul id="todo" class="p-0 my-5">
+        <li *ngFor="let list of lists;let i = index"
+            class="d-flex justify-content-between align-items-center mb-3 bg-light">
+            {{i+1 + "."}} {{ list.notes }} 
+            <span>
+                <strong>Created at : </strong> {{list.time}}
+            </span>
+            
+            <div>
+                <button (click)="delete(list.id)" class="btn btn-danger me-3">Delete</button>
+                <button (click)="editList(list.id)" class="btn btn-warning">Edit</button>
+            </div>
+        </li>
+    </ul>
+</div>

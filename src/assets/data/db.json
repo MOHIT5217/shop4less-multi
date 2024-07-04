@@ -1,0 +1,339 @@
+{
+  "products": [
+    {
+      "product_id": "7",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Wireless Speaker",
+      "description": "Portable wireless speaker for music lovers.",
+      "price": 79.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "AudioTech Corp",
+      "availability": true,
+      "inventory": 120,
+      "tags": [
+        "speaker",
+        "electronics",
+        "wireless"
+      ],
+      "id": "c635"
+    },
+    {
+      "name": "Gaming Console",
+      "product_id": "8",
+      "category": "Electronics",
+      "price": 499.99,
+      "description": "Next-gen gaming console for immersive gaming experience.",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "manufacturer": "GamingTech Inc",
+      "inventory": 40,
+      "tags": [
+        "gaming",
+        "electronics",
+        "console",
+        "entertainment"
+      ],
+      "availability": false,
+      "currency": "USD",
+      "id": "944b"
+    },
+    {
+      "product_id": "9",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Fitness Tracker",
+      "description": "Track your fitness goals with this advanced fitness tracker.",
+      "price": 129.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "Wearables Ltd",
+      "availability": true,
+      "inventory": 90,
+      "tags": [
+        "fitness",
+        "electronics",
+        "tracker",
+        "health"
+      ],
+      "id": "d377"
+    },
+    {
+      "product_id": "10",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "E-book Reader",
+      "description": "Read your favorite books on-the-go with this e-book reader.",
+      "price": 99.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "TechGadget Inc",
+      "availability": true,
+      "inventory": 70,
+      "tags": [
+        "e-book",
+        "electronics",
+        "reader",
+        "portable"
+      ],
+      "id": "5c6f"
+    },
+    {
+      "product_id": "11",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Smartphone X",
+      "description": "High-end smartphone with advanced features.",
+      "price": 799.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "TechGadget Inc",
+      "availability": true,
+      "inventory": 50,
+      "tags": [
+        "smartphone",
+        "electronics",
+        "high-end"
+      ],
+      "id": "5dda"
+    },
+    {
+      "product_id": "12",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Leather Messenger Bag",
+      "description": "Classic leather messenger bag for daily use.",
+      "price": 149.99,
+      "currency": "USD",
+      "category": "Fashion",
+      "manufacturer": "StyleCraft",
+      "availability": true,
+      "inventory": 30,
+      "tags": [
+        "bag",
+        "fashion",
+        "leather"
+      ],
+      "id": "f0f9"
+    },
+    {
+      "product_id": "13",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Wireless Headphones",
+      "description": "Premium quality wireless headphones for immersive audio experience.",
+      "price": 199.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "AudioTech Corp",
+      "availability": true,
+      "inventory": 100,
+      "tags": [
+        "headphones",
+        "electronics",
+        "wireless"
+      ],
+      "id": "9ddb"
+    },
+    {
+      "product_id": "14",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Running Shoes",
+      "description": "Comfortable and lightweight running shoes for athletes.",
+      "price": 99.99,
+      "currency": "USD",
+      "category": "Sports",
+      "manufacturer": "RunnersGear Ltd",
+      "availability": true,
+      "inventory": 80,
+      "tags": [
+        "shoes",
+        "sports",
+        "running"
+      ],
+      "id": "bb88"
+    },
+    {
+      "product_id": "15",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Camera Pro",
+      "description": "Professional-grade camera for photography enthusiasts.",
+      "price": 1499.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "Photography Inc",
+      "availability": true,
+      "inventory": 20,
+      "tags": [
+        "camera",
+        "electronics",
+        "professional",
+        "photography"
+      ],
+      "id": "a114"
+    },
+    {
+      "product_id": "16",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Stainless Steel Watch",
+      "description": "Elegant stainless steel watch for both casual and formal wear.",
+      "price": 249.99,
+      "currency": "USD",
+      "category": "Fashion",
+      "manufacturer": "TimeWear",
+      "availability": true,
+      "inventory": 60,
+      "tags": [
+        "watch",
+        "fashion",
+        "stainless steel"
+      ],
+      "id": "fc11"
+    },
+    {
+      "product_id": "17",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Wireless Speaker 2",
+      "description": "Portable wireless speaker for music lovers.",
+      "price": 79.99,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "AudioTech Corp",
+      "availability": true,
+      "inventory": 120,
+      "tags": [
+        "speaker",
+        "electronics",
+        "wireless",
+        "music"
+      ],
+      "id": "d38a"
+    },
+    {
+      "product_id": "18",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "name": "Yoga Mat",
+      "description": "High-quality yoga mat for yoga and fitness enthusiasts.",
+      "price": 29.99,
+      "currency": "USD",
+      "category": "Fitness",
+      "manufacturer": "FitZone",
+      "availability": true,
+      "inventory": 40,
+      "tags": [
+        "yoga",
+        "fitness",
+        "mat"
+      ],
+      "id": "6920"
+    },
+    {
+      "name": "Cookware Set",
+      "product_id": "19",
+      "category": "Home Kitchen",
+      "price": 199.99,
+      "description": "Complete set of non-stick cookware for kitchen needs.",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/WbjerLzUeW0cgVsOq5zQ/product/08G-P5-3797-KL-01.png&width=600&png=true&resourceKey=WbjerLzUeW0cgVsOq5zQ",
+      "manufacturer": "KitchenPro",
+      "inventory": 90,
+      "tags": [
+        "cookware",
+        "kitchen",
+        "non-stick"
+      ],
+      "availability": true,
+      "currency": "INR",
+      "id": "1e4e"
+    },
+    {
+      "product_id": "23",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/RdtjCejFp27xNPFZssFF/product/APPLEIPX_1.jpg&width=600&png=true&resourceKey=RdtjCejFp27xNPFZssFF",
+      "name": "Iphone1512",
+      "description": "Good mobile",
+      "price": 90000,
+      "currency": "USD",
+      "category": "Electronics",
+      "manufacturer": "India",
+      "availability": "true",
+      "inventory": 23,
+      "tags": [
+        "realme",
+        "test",
+        "test",
+        "15"
+      ],
+      "id": "2c69"
+    },
+    {
+      "product_id": "34",
+      "product_img": "https://resources.commerceup.io/?key=https://prod-admin-images.s3.amazonaws.com/S8TEk-xf_70r_Xb3mUIQ1/product/1000-6.jpg&width=600&png=true&resourceKey=S8TEk-xf_70r_Xb3mUIQ1",
+      "name": "Helmat",
+      "description": "Good Halmet",
+      "price": 10,
+      "currency": "INR",
+      "category": "Fashion",
+      "manufacturer": "India",
+      "availability": true,
+      "inventory": 30,
+      "tags": [
+        "New",
+        "Men",
+        "Helmet"
+      ],
+      "id": "fc7d"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "catName": "Electronics"
+    },
+    {
+      "id": "2",
+      "catName": "Home Kitchen"
+    },
+    {
+      "id": "3",
+      "catName": "Fitness"
+    },
+    {
+      "id": "4",
+      "catName": "Fashion"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todo-list": [
+    {
+      "id": "2a5b",
+      "notes": "gfcgfhchgc",
+      "time": "15:12 PM Wednesday 21 May 2024"
+    },
+    {
+      "id": "73bf",
+      "notes": "hcgfgfcgfcgfc",
+      "time": "15:13 PM Wednesday 21 May 2024"
+    },
+    {
+      "id": "486e",
+      "notes": "hgcgfhcghfcgh",
+      "time": "15:13 PM Wednesday 21 May 2024"
+    }
+  ],
+  "exhaustmap": [
+    {
+      "data": 0
+    },
+    {
+      "id": "2ff6",
+      "data": 0
+    },
+    {
+      "id": "5a1b",
+      "data": 0
+    },
+    {
+      "id": "c68e",
+      "data": 0
+    },
+    {
+      "id": "ee66",
+      "data": 0
+    }
+  ]
+}

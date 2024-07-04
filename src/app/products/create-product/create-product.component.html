@@ -1,0 +1,56 @@
+<form class="form p-5" (ngSubmit)="onSubmit(formUpdate.value);formUpdate.reset()" #formUpdate="ngForm">
+    <div class="mb-3">
+        <label class="form-label" for="name">Product Name</label>
+        <input class="form-control" type="text" [(ngModel)]="name" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="product_id">Product Id</label>
+        <input class="form-control" type="text" [(ngModel)]="product_id" name="product_id" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="category">Product Category</label>
+        <input class="form-control" type="text" [(ngModel)]="category" name="category" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="price">Product price</label>
+        <input class="form-control" type="number" [(ngModel)]="price" name="price" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="description">Product description</label>
+        <input class="form-control" type="text" [(ngModel)]="description" name="description" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="product_img">Product Image</label>
+        <input class="form-control" type="text" [(ngModel)]="product_img" name="product_img" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="manufacturer">Product manufacturer</label>
+        <input class="form-control" type="text" [(ngModel)]="manufacturer" name="manufacturer" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="inventory">Product inventory</label>
+        <input class="form-control" type="number" [(ngModel)]="inventory" name="inventory" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="tags">Product tags</label>
+        <input class="form-control" type="text" [(ngModel)]="tags" name="tags" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="availability">Product availability</label>
+        <!-- <select class="form-select" name="availability" ngModel required>
+            <option selected value="true">true</option>
+            <option value="false">false</option>
+        </select> -->
+        <input type="checkbox" [(ngModel)]="availability" name="availability">
+    </div>
+    <div class="mb-3">
+        <label class="form-label" for="currency">Product currency</label>
+        <select class="form-select" name="currency" [(ngModel)]="currency" required>
+            <option selected value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="AED">AED</option>
+        </select>
+    </div>
+
+    <button [disabled]="!formUpdate.form.valid" class="btn btn-success">Submit</button>
+</form>

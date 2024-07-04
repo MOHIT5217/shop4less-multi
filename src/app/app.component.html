@@ -1,0 +1,17 @@
+<div class="grid">
+  <header class="col-12">
+    <app-header></app-header>
+  </header>
+  <main class="col-12">
+    <section class="d-flex">
+      <app-sidebar class="col-3"></app-sidebar>
+      <div class="col-9">
+        <!-- <app-child [data]="parentData" (outData)="chidData($event)"></app-child> -->
+        <router-outlet></router-outlet>
+      </div>
+  </section>
+  </main>
+  <footer class="col-12">
+    <app-footer></app-footer>
+  </footer>
+</div>

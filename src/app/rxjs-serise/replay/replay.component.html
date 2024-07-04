@@ -1,0 +1,47 @@
+<p>replay works!</p>
+
+
+<div class="row justify-content-center mb-4">
+    <div class="col-5 d-flex">
+        <input #video class="form-control" type="text"><button (click)="addVideo(video)" class="btn btn-success">Add</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">Stream -1 </div>
+            <div class="card-body">
+                <ul>
+                    <li *ngFor="let item of user1Arr">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">Stream -2 </div>
+            <div class="card-body">
+                <button class="btn" [ngClass]="isSubcribeuser2? 'btn-danger': 'btn-success'"
+                (click)="subscribe2()"
+                >{{isSubcribeuser2? 'Unsubscribe': 'Subscribe'}}</button>
+                <ul>
+                    <li *ngFor="let item of user2Arr">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header">Stream -3  </div>
+            <div class="card-body">
+                <button class="btn" [ngClass]="isSubcribeuser3? 'btn-danger': 'btn-success'"
+                (click)="subscribe3()"
+                >{{isSubcribeuser3? 'Unsubscribe': 'Subscribe'}}</button>
+                <ul>
+                    <li *ngFor="let item of user3Arr">{{item}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

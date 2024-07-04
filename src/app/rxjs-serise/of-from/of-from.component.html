@@ -1,0 +1,72 @@
+<p>of-from works!</p>
+
+
+<div class="row">
+    <div class="col-6">
+        <strong>Of operater</strong>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                of('Mohit','Maheshwari','Ji')
+            </div>
+            <div class="card-body">
+                <ul id="elContainer"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <strong>Of operater argument as Object</strong>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                of( &#123; a:'Mohit',b:'Maheshwari',c:'Ji' &#125; )
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li>{{objMes.a}}</li>
+                    <li>{{objMes.b}}</li>
+                    <li>{{objMes.c}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <strong>from operater</strong>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                from(['Mohit','Maheshwari','Ji'])
+            </div>
+            <div class="card-body">
+                <ul id="elContainer2"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <strong>from operater promise as an argument</strong>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                from(promise)
+            </div>
+            <div class="card-body">
+                <ul id="elContainer1"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <strong>from operater string as an argument</strong>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                from('Mohit Maheshwari')
+            </div>
+            <div class="card-body">
+                <ul id="elContainer4"></ul>
+            </div>
+        </div>
+    </div>
+</div>
